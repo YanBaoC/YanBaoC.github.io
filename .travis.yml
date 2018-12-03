@@ -21,6 +21,7 @@ script:
   - cd ../
   - mv .deploy_git/.git/ ./public/   # 这一步之前的操作是为了保留master分支的提交记录，不然每次git init的话只有1条commit
   - cd ./public
+  - echo 'blog.yeisure.com' > CNAME
   - git config user.name "alef"  #修改name
   - git config user.email "cyb19950118@163.com"  #修改email
   - git add .
